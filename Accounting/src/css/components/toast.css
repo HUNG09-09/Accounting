@@ -1,0 +1,36 @@
+.toast-block {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 999;
+
+}
+
+.toast+.toast {
+    margin-top: 10px;
+}
+
+.toast {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding: 16px;
+    border-radius: 4px;
+    max-width: 450px;
+    min-width: 400px;
+    box-shadow: 0 0 10px #dedede;
+    position: relative;
+}
+
+
+.toast-icon {
+    flex: 0 0 24px;
+}
+
+.toast-button {
+    position: absolute;
+    right: 16px;
+
+}
+

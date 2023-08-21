@@ -1,0 +1,116 @@
+/* body */
+.m-popup {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.m-popup-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.m-popup-body {
+    background-color:#fff;
+    margin: auto;
+    z-index: 10;
+}
+
+.popup-container {
+    padding: 32px;
+}
+
+/* header */
+.m-popup .popup-header {
+    display: flex;
+    height: 32px;
+    margin-bottom: 32px;
+    justify-content: space-between;
+}
+
+.m-popup .form-group .form-control {
+    height: 36px;
+}
+
+.m-popup .popup-header .popup-title {
+    margin-bottom: 23px;
+    font-size:24px;
+    color:#212121;
+    font-weight:700;
+    text-align:left;
+} 
+
+.popop-icon-close {
+    width: 16px;
+	height: 16px;
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+    background-position: -148px -148px;
+    cursor: pointer;
+}
+
+.m-popup .popup-header .popup-desc {
+    margin-bottom: 14px;
+    height: 37px;
+    font-weight: 400;
+    color: #1F1F1F;
+    font-size: 14px;
+}
+
+/* content */
+
+.popup-content .form-control {
+    width: 280px;
+}
+
+.m-popup .form-group .gender {
+    margin-top: 16px;
+}
+
+.m-popup .form-group .gender {
+    /* display: flex;
+    align-items: center; */
+}
+
+.form-group .gender label {
+    margin-right: 16px;
+}
+
+.m-popup .form-group .gender-radio {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border:2px solid #666666;
+}
+
+/* làm mờ placehoder type=date */
+input[type="date"]::-webkit-datetime-edit-text {
+    color:  #E0E0E0;
+}
+
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+    color:  #E0E0E0;
+}
+  
+
+/* btn */
+
+.m-popup-body .popup-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 60px;
+    background-color: #F5F5F5;
+    padding: 12px 32px;
+    box-sizing: border-box;
+}
+
+
+

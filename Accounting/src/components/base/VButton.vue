@@ -1,0 +1,123 @@
+<template>
+    <button class="m-btn" @click="onClick" :class="buttonClass" >{{ buttonText }}</button>
+</template>
+
+<script>
+export default {
+   name: "VButton",
+   props:['buttonText',"buttonClass"],
+   methods: {
+        onClick() {
+            this.$emit('onclick');
+        }
+    },
+}
+</script>
+
+<style scoped>
+/* nút chính */
+.m-btn {
+   padding: 0px 16px;
+   min-width: 80px;
+   height: 36px;
+   background-color: #50B83C;
+   border-radius: 4px;
+   border: none;
+   color: #fff;
+   min-width: 80px;
+   font-weight: 500;
+}
+
+.m-btn--hover {
+   background-color: #57C841;
+   cursor: pointer; 
+}
+
+.m-btn:hover{
+   background-color: #57C841;
+   cursor: pointer;
+}
+
+.m-btn:active {
+   background-color: #57C841;
+   cursor: pointer;
+}
+
+/* nút phụ */
+.m-btn--secondary {
+   border: 1px solid #E6E6E6;
+   color: #1F1F1F;
+   background-color: #FFFFFF;
+}
+
+.m-btn--secondary:hover {
+   color:  #57C841;
+   border-color: #57C841;
+   background-color: #FFFFFF;
+}
+
+/* nút link */
+.m-btn--link {
+   color: #50B83C;
+   background-color: transparent;
+}
+
+.m-btn--link:hover {
+   color: #57C841;
+   background-color: #fff;
+}
+
+/* icon button */
+
+.m-btn-icon {
+   height: 36px;
+   background-color: rgba(80,184,60,0.1);
+   border-radius: 4px;
+   border: none;
+   padding: 8px 10px;
+}
+
+.m-btn-icon--plus{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 20px;
+   width: 20px;
+   color: #50B83C;
+}
+
+.m-btn-icon--plus i {
+   width: 16px;
+   height: 16px;
+}
+
+
+/* combo button */
+
+.m-btn-combo {
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+.m-btn-down {
+   border-left: 1px solid #fff;
+   padding: 10px 12px;
+   text-align: center;
+   min-width: auto;
+   border-top-left-radius:0;
+   border-bottom-left-radius: 0;
+}
+
+.m-btn-down i {
+   width: 16px;
+   height: 16px;
+}
+
+/* button icon */
+
+.m-btn-plus-left {
+   padding: 8px 16px 8px 12px;
+}
+.m-btn-plus-left i {
+   margin-right: 4px;  
+}
+</style>

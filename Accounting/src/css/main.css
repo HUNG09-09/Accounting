@@ -1,0 +1,46 @@
+@import url(../css/components/button.css);
+@import url(../css/components/dialog.css);
+@import url(../css/components/employeeForm.css);
+@import url(../css/components/formInput.css);
+@import url(../css/components/icon.css);
+@import url(../css/components/formInput.css);
+@import url(../css/components/paging.css);
+@import url(../css/components/popup.css);
+@import url(../css/components/table.css);
+@import url(../css/components/textfield.css);
+@import url(../css/components/toast.css);
+body {
+    margin: 0px;
+}
+
+* {
+    font-size: 13px;
+    font-family: MISA Fonts;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: MISA Fonts;
+    src: url(../assets/font/Roboto/Roboto-Regular.ttf);
+}
+
+
+:root {
+    --color-primary:#007AFF;
+    --color-hover: #3395FF;
+    --color-focus:#004999;
+    --color-border-default:#E0E0E0;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+
+.text-align-right {
+    text-align: right;
+}

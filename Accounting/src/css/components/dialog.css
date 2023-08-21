@@ -1,0 +1,107 @@
+/* .modal {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+.m-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 15;
+}
+
+
+/* dialog */
+.dialog-body {
+    position: absolute;
+    padding: 24px 24px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    z-index: 200;
+}
+
+/* dialog header */
+.dialog-body .dialog-header {
+    display: flex;
+    height: 26px;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.dialog-title {
+    /* margin: 0; */
+    font-weight: 700;
+    font-size: 20px;
+    color: #1F1F1F;
+}
+
+/* dialog close */
+.dialog-btn-close {
+    font-size: 20px;
+    color: #1F1F1F;
+    cursor: pointer;
+}
+
+.m-dialog .dialog-btn-close:hover {
+    opacity: 0.7;
+}
+
+/* dialog content */
+.dialog-content {
+    margin-top: 24px;
+    display: flex;
+}
+
+.dialog-content-detail {
+
+    align-items: center;
+    font-weight: 600;
+    color: #1F1F1F;
+    line-height: 18px;
+    margin-left: 16px;
+}
+
+/* dialog button */
+.dialog-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.m-dialog .dialog-button .m-btn--secondary {
+    margin-right: 8px;
+}
+
+.m-btn--secondary {
+    margin-right: 8px;
+}
+
+
+.dialog-icon-btn-close {
+    background: url(../../assets/img/Sprites.64af8f61.svg) no-repeat -1177px -362px;
+	width: 13px;
+	height: 12px;
+}
+
+
+
